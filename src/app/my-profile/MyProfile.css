@@ -1,0 +1,16 @@
+.certificate-upload {
+  min-height: 92px;
+  border: 2px dashed var(--bs-border-color);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.certificate-upload:hover {
+  border-style: solid;
+}
+
+.card {
+  border-radius: 16px;
+  border-color: var(--bs-border-color);
+}

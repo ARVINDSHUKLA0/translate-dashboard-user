@@ -1,0 +1,150 @@
+.job-board-page {
+  min-height: 100vh;
+  background: #f8f9fc;
+  color: #101d36;
+}
+
+/* Header */
+
+.job-board-title {
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.job-board-subtitle {
+  color: #667085;
+  font-size: 13px;
+}
+
+/* Tabs */
+
+.job-tabs {
+  padding: 4px;
+  gap: 2px;
+  border: 1px solid #e2e6ed;
+  border-radius: 10px;
+  background: #f7f8fa;
+}
+
+.job-tab {
+  border: 0 !important;
+  color: #46546b;
+  background: transparent;
+  font-size: 13px;
+  padding: 8px 17px;
+  border-radius: 7px !important;
+}
+
+.job-tab:hover {
+  color: #17233d;
+  background: #fff;
+}
+
+.job-tab.active {
+  color: #111d35;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.08);
+  font-weight: 600;
+}
+
+/* Jobs */
+
+.jobs-list {
+  width: 100%;
+}
+
+.job-item {
+  padding: 17px 2px 28px;
+  border-bottom: 0;
+  background: transparent;
+}
+
+.job-title {
+  color: #071a38;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.job-meta {
+  color: #65738a;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.meta-icon {
+  margin-right: 7px;
+  color: #c7cddd;
+  font-size: 13px;
+}
+
+.client-info {
+  color: #61708a;
+  font-size: 13px;
+}
+
+/* Category */
+
+.job-category {
+  color: #68758a;
+  background: #f0f2f5;
+  border-radius: 20px;
+  padding: 4px 11px;
+  font-size: 10px;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+}
+
+/* Button */
+
+.apply-btn {
+  min-width: 93px;
+  padding: 6px 13px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  background: #2864df;
+  border-color: #2864df;
+}
+
+.apply-btn:hover,
+.apply-btn:focus {
+  background: #1f56c8;
+  border-color: #1f56c8;
+}
+
+/* Mobile */
+
+@media (max-width: 767.98px) {
+  .job-board-page {
+    padding-top: 20px !important;
+  }
+
+  .job-tabs {
+    width: 100%;
+    display: flex !important;
+  }
+
+  .job-tab {
+    flex: 1;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 12px;
+  }
+
+  .job-item {
+    padding: 20px 0;
+  }
+
+  .job-actions {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .job-title {
+    font-size: 14px;
+  }
+}

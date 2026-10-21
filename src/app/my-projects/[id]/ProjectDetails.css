@@ -1,0 +1,131 @@
+.project-details-page {
+  background: #f8f9fc;
+}
+ 
+
+.project-due-badge {
+  display: inline-block;
+  padding: 8px 13px;
+  border-radius: 20px;
+  background: #fff3d8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: monospace;
+}
+
+.upload-box {
+  min-height: 158px;
+  border: 2px dashed #dfe4ee;
+  border-radius: 12px;
+  background: #fafbfe;
+  cursor: pointer;
+  padding: 25px;
+}
+
+.upload-box:hover {
+  border-color: #b9c3d5;
+}
+
+.upload-icon {
+  font-size: 24px;
+}
+
+.client-avatar {
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+  border-radius: 50%;
+  background: #2864e8;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.payout-amount {
+  font-size: 24px;
+  font-family: monospace;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.milestone-list {
+  position: relative;
+}
+
+.milestone-item {
+  position: relative;
+  display: flex;
+  min-height: 56px;
+}
+
+.milestone-item:not(.last)::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 20px;
+  bottom: 0;
+  width: 2px;
+  background: #dfe4ee;
+}
+
+.milestone-dot {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  border-radius: 50%;
+  border: 2px solid #cbd5e1;
+  background: #ffffff;
+  margin-right: 7px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.milestone-dot span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.milestone-item.completed .milestone-dot {
+  border-color: #10b981;
+}
+
+.milestone-item.completed .milestone-dot span {
+  background: #10b981;
+}
+
+.milestone-content {
+  padding-bottom: 10px;
+}
+
+@media (max-width: 991.98px) {
+  .project-due-badge {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 767.98px) { 
+  .upload-box {
+    min-height: 140px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .project-details-page {
+    padding: 15px !important;
+  }
+ 
+
+  .upload-box {
+    min-height: 130px;
+    padding: 18px;
+  }
+}
