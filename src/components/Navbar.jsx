@@ -1062,8 +1062,6 @@
 
 
 
-
-
 'use client'
 
 import React, { useEffect, useRef, useState } from 'react'
@@ -1193,8 +1191,9 @@ const Navbar = ({
         setIsProfileOpen(false)
         setUser(null)
 
-        // Full page load: client site starts fresh, logged out.
-        window.location.assign('/login?type=translator')
+        // Logout ke baad client site ke home page par bhejo.
+        // replace() se Back button dabane par dashboard wapas nahi khulega.
+        window.location.replace('/')
     }
 
 
